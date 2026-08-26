@@ -1,0 +1,10 @@
+2026-08-20 09:00:01 HOST01 Info: User kaan logged on interactively.
+2026-08-20 09:03:12 HOST01 Info: Scheduled task "DailyBackup" started successfully.
+2026-08-20 09:07:44 HOST01 Warning: Process explorer.exe started by user kaan.
+2026-08-20 09:10:19 HOST01 Alert: powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQA executed by user svc_backup.
+2026-08-20 09:11:03 HOST01 Info: Windows Update check completed, no updates found.
+2026-08-20 09:14:27 HOST01 Alert: new user account "svc_temp01" was created and added to the local Administrators group.
+2026-08-20 09:16:50 HOST01 Info: User kaan locked the workstation.
+2026-08-20 09:20:05 HOST01 Info: Antivirus definitions updated successfully.
+2026-08-20 09:24:38 HOST01 Info: Print spooler service restarted.
+2026-08-20 09:29:59 HOST01 Info: User kaan logged off.

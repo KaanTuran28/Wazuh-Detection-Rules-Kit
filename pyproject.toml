@@ -1,0 +1,23 @@
+[project]
+name = "wazuh-detection-rules-kit"
+version = "0.1.0"
+description = "Custom Wazuh detection rules, threat-hunting queries, and a rule validator/simulator."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "T-X" }]
+dependencies = []
+
+[project.scripts]
+validate-wazuh-rules = "validate_rules:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["validate_rules"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

@@ -1,0 +1,21 @@
+<group name="local,web,attack,">
+
+  <rule id="100020" level="10">
+    <regex type="pcre2">(?i)(union\s+select|or\s+1=1|drop\s+table)</regex>
+    <description>Web attack: possible SQL injection attempt detected.</description>
+    <group>web,sql_injection,attack,pci_dss_6.5.1,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <rule id="100021" level="9">
+    <regex type="pcre2">(?i)(&lt;script|onerror=|javascript:)</regex>
+    <description>Web attack: possible XSS attempt detected.</description>
+    <group>web,xss,attack,pci_dss_6.5.7,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <rule id="100022" level="8">
+    <regex type="pcre2">\.\./\.\./</regex>
+    <description>Web attack: possible path traversal attempt detected.</description>
+    <group>web,path_traversal,attack,pci_dss_6.5.8,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+</group>

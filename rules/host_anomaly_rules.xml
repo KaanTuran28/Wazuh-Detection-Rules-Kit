@@ -1,0 +1,15 @@
+<group name="local,windows,host_anomaly,">
+
+  <rule id="100030" level="9">
+    <regex type="pcre2">(?i)(-enc |-EncodedCommand)</regex>
+    <description>Possible obfuscated PowerShell command execution.</description>
+    <group>powershell,execution,attack,gdpr_IV_35.7.d,nist_800_53_SI.4,mitre_t1027,mitre_t1059_001,</group>
+  </rule>
+
+  <rule id="100031" level="10">
+    <regex type="pcre2">(?i)(new user account|added to.*administrators)</regex>
+    <description>Possible unauthorized local administrator account creation.</description>
+    <group>windows,persistence,attack,gdpr_IV_35.7.d,nist_800_53_AC.2,mitre_t1136,mitre_t1098,</group>
+  </rule>
+
+</group>
